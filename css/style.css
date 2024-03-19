@@ -482,7 +482,7 @@ p {
   border-radius: 50%;
   background-color: #4d5ae5;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -492,7 +492,6 @@ p {
 .footer-icon:hover,
 .footer-icon:focus {
   background-color: #31d0aa;
- 
 }
 .footer-list {
   display: flex;
@@ -502,4 +501,75 @@ p {
 
 .footer-colomn {
   margin-right: 120px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 24px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+  border: 1px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  background-color: #404bbf;
+  fill: white;
+}
+
+.modal-close-button:hover .icon-close-black,
+.modal-close-button:focus .icon-close-black
+ {
+  fill: #fff;
+}
+
+.icon-close-black {
+  position: absolute;
+  fill: #2e2f42;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.modal-title {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+}
+
+.modal-top {
+ 
 }
