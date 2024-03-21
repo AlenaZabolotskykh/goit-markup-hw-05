@@ -649,6 +649,7 @@ p {
   outline: transparent;
   padding: 10px 18px;
   resize: none;
+  margin-bottom: 16px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
