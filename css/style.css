@@ -787,13 +787,15 @@ p {
   color: #4d5ae5;
 }
 
+.privacy-text span {
+  display: inline-flex;
+}
 .modal-check-icon {
   margin-right: 8px;
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
