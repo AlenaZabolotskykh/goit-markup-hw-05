@@ -564,6 +564,8 @@ p {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -584,20 +586,24 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close {
   position: absolute;
   top: 24px;
   right: 24px;
-  border-radius: 100%;
+  border-radius: 50%;
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
   border: 1px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover,
@@ -639,8 +645,8 @@ p {
   border-radius: 4px;
   background-color: transparent;
   margin-bottom: 8px;
-  outline: none;
-  padding-left: 40px;
+  outline: transparent;
+  padding-left: 38px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -679,10 +685,18 @@ p {
   fill: #4d5ae5;
 }
 
+.modal-label-wrap {
+  position: relative;
+  margin-bottom: 8px;
+}
+
 .modal-input-wrap {
   position: relative;
 }
 
+.textarea {
+  margin-bottom: 16px;
+}
 .input::placeholder {
   font-size: 12px;
   line-height: 1.17;
