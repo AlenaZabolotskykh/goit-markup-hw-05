@@ -272,7 +272,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 8px;
+  margin-top: 8px;
 }
 
 .team-icon-item {
